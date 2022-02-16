@@ -1,0 +1,252 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>:: Direct News Access :: Deliver News Fastly ::</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="jquery-3.5.1.js"></script>
+<style>
+.BG{
+  background-color: #D3D3D3;
+}
+.ipt{
+width :250px;
+length:25px;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+}
+.ipt2{
+width :505px;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+}
+.judul{
+float:center;
+}
+.align{
+margin-left:auto;
+margin-right:auto;
+align:"center";
+}
+.font{
+font-family:Arial;
+font-weight: bold;
+}
+.font2{
+font-family:Arial;
+font-size: 12px;
+}
+hr{
+text-align:right;
+background: black;
+height:1px;
+} 
+button {
+background-color:#4CAF50;
+padding: 15px 32px;
+font-family: Arial;
+border: none;
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+</style>
+<script>
+$(document).ready(function(){
+$("#button1").click(function(){
+var nilai = $("#nama1").val();
+var nilai2 = $("#nama2").val();
+var nilai3 = $("#email").val();
+var nilai4 = $("#D1").val();
+var nilai5 = $("#D2").val();
+var nilai6 = $("#D3").val();
+var nilai7 = $("#pass").val();
+var nilai8 = $("#F:checked").val();
+var nilai9 = $("#M:checked").val();
+if (nilai8==undefined) {nilai8="";}
+if (nilai9==undefined) {nilai9="";}
+alert("First Name:"+nilai+"\n"+"Last Name:"+nilai2+"\n"+"Email:"+nilai3+"\n"+"Pass:"+nilai7+"\n"+"Date Of birth:"+nilai4+" "+nilai5+" "+nilai6+"\n"+"Gender:"+nilai8+nilai9);
+})
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="container">	
+<header>DirectNews.Com</header>		<!--HTML5 -->
+<nav><!-- HTML 5 -->
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Artikel</a>
+<ul class="submenu">
+<li><a href="#">Sains</a></li>
+<li><a href="#">Bola</a></li>
+</ul>
+</li>
+<li><a href="video.html">Video</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+<li><a href="#">Sitemap</a></li>
+<li><a href="#">JQuery</a>
+<ul class="submenu">
+<li><a href="minggu10-posttest.html">Post test</a></li>
+</ul>
+</li>
+<li><a href="#">HTML5-Form</a>
+<ul class="submenu">
+<li><a href="form1.html">Form 1</a></li>
+<li><a href="form2.html">Form 2</a></li>
+<li><a href="form3.html">Form 3</a></li>
+<li><a href="form4.html">Form 4</a></li>
+</ul>
+</li>
+<li><a href="#">HTML5-Canvas</a>
+<ul class="submenu">
+<li><a href="canvas1.html">Canvas 1</a></li>
+<li><a href="canvas2.html">Canvas 2</a></li>
+<li><a href="canvas3.html">Canvas 3</a></li>
+<li><a href="canvas4.html">Canvas 4</a></li>
+<li><a href="canvas5.html">Canvas 5</a></li>
+<li><a href="canvas6.html">Canvas 6</a></li>
+<li><a href="canvas7.html">Canvas 7</a></li>
+<li><a href="canvas8.html">Canvas 8</a></li>
+</ul>
+</li>
+</ul>
+</nav>			
+<div id="content">
+<div class="BG">
+<div class="align">
+<H1 SIZE="20" ALIGN="center" class="font">Create an account&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp</H1>
+<H4  ALIGN = "CENTER" class="font">It's free and always will be.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp</H4>
+<form action="register.php" method="POST" enctype="multipart/form-data" ALIGN="CENTER">
+<p>
+<input type="text" size="25" maxlength="40" placeholder="First Name" align="left" class="ipt" id="nama1"></input>
+<input type="text" size="25" maxlength="40" placeholder="Last Name" align="left" class="ipt" id="nama2"></input>
+</p>
+<p>
+<input type="text" size="50" maxlength="40" placeholder="Your Email address" align="left" class="ipt2" id="email" ></input>
+</p>
+<p>
+<input type="text" size="50" maxlength="40" placeholder="Re-enter email address" align="left" class="ipt2" ></input>
+</p>
+<p>
+<input type="password" size="50" maxlength="40" placeholder="New Password" align="left" class="ipt2" id="pass" ></input>
+</p>
+<p>
+<label class="font">Birthday&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp</label>
+</p>
+<p class="font2">
+<select name="Day" id="D1">
+<option selected="selected" value="">Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+<select name="Month" id="D2">
+<option selected="selected" value="">Month</option>
+<option value="Jan">Jan</option>
+<option value="Feb">Feb</option>
+<option value="Mar">Mar</option>
+<option value="Apr">Apr</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="Aug">Aug</option>
+<option value="Sept">Sept</option>
+<option value="Oct">Oct</option>
+<option value="Nov">Nov</option>
+<option value="Dec">Dec</option>
+</select>
+<select name="Year" id="D3">
+<option selected="selected" value="">Year</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+</select>
+<a href="https://www.facebook.com/about/privacy/update">Why do i need to provide my</a>.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;</br><a href="https://www.facebook.com/about/privacy/update">date of birth</a>?&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;
+</p>
+<p class="font">
+<input type="radio" name="radClass" value="Female" id="F" >Female </input>
+<input type="radio" name="radClass" value="Male" id="M">Male&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </input>
+</p>
+<p class="font2">
+by clicking create an account, you agree to our <a href="https://www.facebook.com/legal/terms/update">term </a>and that&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</br>
+you have read our <a href="https://www.facebook.com/about/privacy/update">Data use policy,</a> including our 
+<a href="https://www.facebook.com/policies/cookies/">cookie use.</a>.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</p>
+<p>
+<button id="button1"><a href="minggu10-posttest.html">create an account</a></button>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</p>
+</form>
+<hr width="37%">
+</div>
+</div>
+</div>
+<div id="sidebar">
+<li class="widget">
+<h2>Popular Post</h2>
+<ul>
+<li><a href="#">Prasasti Maya Bukan Petunjuk Kiamat</a></li>
+<li><a href="#">Asteroid Vesta dalam Video 3D</a></li>
+<li><a href="#">Seperlima Gletser Himalaya Mencair</a></li>
+</ul>
+</li>
+<li class="widget">
+<h2>Commented Post</h2>
+<ul>
+<li><a href="#">Prasasti Maya Bukan Petunjuk Kiamat</a></li>
+<li><a href="#">Asteroid Vesta dalam Video 3D</a></li>
+<li><a href="#">Seperlima Gletser Himalaya Mencair</a></li>
+</ul>
+</li>
+<li class="widget">
+<h2>Audio Streaming</h2>
+<audio id="audio" src="sounds/sound.mp3" controls></audio>
+</li>
+</div>
+<footer>
+<div id="column">
+<h2>Dapatkan Bantuan dan Dukungan</h2>
+Untuk mendapatkan petunjuk atau dukungan dari kami, kunjungi situs <a
+href="http://support.directnews.com">support.directnews.com</a> dan submit form
+anda.
+</div>
+<div id="column">
+<h2>Hubungi Kami</h2>
+Jl. Parikesit 75<br>
+Surabaya 66666 Jawa Timur<br>
+(+6231) 5556667
+</div>
+<div id="column">
+<h2>Temukan Kami di ...</h2>
+<a href="http://facebook.com/directnewsaccess">Facebook</a><br>
+<a href="http://twitter.com/directnewsaccess">Twitter</a>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>
